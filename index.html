@@ -7,10 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tailwind Css</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        * {
+            background-color: white;
+        }
+
         .font_roboto {
             font-family: 'Roboto', sans-serif;
         }
@@ -18,10 +23,11 @@
         .banner {
             height: 80vh;
         }
-        .banner_container{
-            width: 95%;
-            height: 80vh;
-            background-color: antiquewhite;
+
+        .banner_container {
+            width: 91.66%;
+            height: auto;
+            /* background-color: antiquewhite; */
         }
     </style>
 </head>
@@ -41,25 +47,75 @@
                 </ul>
             </div>
         </div>
-        <div class="w-11/12 h-auto py-5 lg:p-24 bg-[#FFFBF0] mx-auto banner flex flex-col lg:flex-row justify-around items-center gap-3">
-            <div class="w-full lg:w-2/4 space-y-4">
-                <h3 class="uppercase"><span class="text-yellow-400 text-6xl font-semibold">Be the Penguins</span><br>
-                    <span class="text-[#363958] text-5xl font-semibold">of Winter</span>
+        <div
+            class="w-11/12 h-auto py-5 md:p-24 bg-[#FFFBF0] mx-auto banner flex flex-col md:flex-row justify-around items-center gap-3">
+            <div class="w-full md:w-2/4 space-y-4">
+                <h3 class="uppercase leading-3 text-3xl md:text-5xl"><span class="text-yellow-400 text-6xl font-semibold">Be the Penguins</span><br>
+                    <span class="text-[#363958] text-3xl md:text-5xl font-semibold">of Winter</span>
                 </h3>
                 <p class="text-sm text-[#3E3E3E] font-normal">Lorem Ipsum is simply dummy text of the printing <br>
                     and typesetting industry.</p>
-                <button class="text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] w-28 h-10 rounded"><i class="fa-solid fa-cart-shopping pr-2"></i>Buy Now</button>
+                <button class="text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] w-28 h-10 rounded">Buy Now</button>
             </div>
-            <div class="w-full lg:w-2/5 h-2/4">
-               <img src="./images/model.png" alt="">
+            <div class="w-full md:w-2/5 h-2/4">
+                <img src="./images/model.png" alt="">
             </div>
-        </div>
-        <div class="banner_container mx-auto">
-
         </div>
     </header>
     <main>
-
+        <!-- Woman Jacket Section -->
+        <section>
+            <div class="banner_container mx-auto">
+                <h3 class="text-[#363958] uppercase text-5xl">Woman Jacket</h3>
+                <div class="w-full h-4.7/5 pt-5 flex flex-col md:flex-row justify-evenly items-center">
+                    <div class="card w-auto h-auto p-3">
+                        <figure><img src="/images/jacket-1.png" alt="Shoes" class="w-full h-3/5 bg-[#F1F1F1]" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-[#363958] text-4">Yellow Coat Jacket </h2>
+                            <p>Lorem Ipsum is simply dummy text of the <br>
+                                printing and typesetting industry.</p>
+                            <div class="flex flex-1 justify-between">
+                                <h3><span style="color: #FABE4C; font-size: 30px;">$234</span></h3>
+                                <button class="btn btn-success bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-auto h-auto p-3">
+                        <figure><img src="/images/jacket-2.png" alt="Shoes" class="w-full h-3/5 bg-[#F1F1F1]" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-[#363958] text-4">Yellow Coat Jacket </h2>
+                            <p>Lorem Ipsum is simply dummy text of the <br>
+                                printing and typesetting industry.</p>
+                            <div class="flex flex-1 justify-between">
+                                <h3><span style="color: #FABE4C;
+                        font-family: Roboto;
+                        font-size: 30px;
+                        font-weight: 900;">$234</span></h3>
+                                <button class="btn btn-success bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-auto h-auto p-3">
+                        <figure><img src="/images/jacket-3.png" alt="Shoes" class="w-full h-3/5 bg-[#F1F1F1]" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-[#363958] text-4">Yellow Coat Jacket </h2>
+                            <p>Lorem Ipsum is simply dummy text of the <br>
+                                printing and typesetting industry.</p>
+                            <div class="flex flex-1 justify-between">
+                                <h3><span style="color: #FABE4C;
+                        font-family: Roboto;
+                        font-size: 30px;
+                        font-weight: 900;">$234</span></h3>
+                                <button class="btn btn-success bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
