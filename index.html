@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tailwind Css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font_roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .banner {
+            height: 80vh;
+        }
+        .banner_container{
+            width: 95%;
+            height: 80vh;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="w-11/12 bg-[#FFFBF0] mx-auto h-auto flex flex-col md:flex-row justify-around items-center">
+            <div>
+                <img src="./icons/logo.png" alt="" class="w-1/2 h-1/2">
+            </div>
+            <div>
+                <ul class="flex flex-col md:flex-row justify-around items-center font_roboto">
+                    <li class="mx-3">Home</li>
+                    <li class="mx-3">Product</li>
+                    <li class="mx-3">About Us</li>
+                    <li class="mx-3">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-11/12 h-auto py-5 lg:p-24 bg-[#FFFBF0] mx-auto banner flex flex-col lg:flex-row justify-around items-center gap-3">
+            <div class="w-full lg:w-2/4 space-y-4">
+                <h3 class="uppercase"><span class="text-yellow-400 text-6xl font-semibold">Be the Penguins</span><br>
+                    <span class="text-[#363958] text-5xl font-semibold">of Winter</span>
+                </h3>
+                <p class="text-sm text-[#3E3E3E] font-normal">Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry.</p>
+                <button class="text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] w-28 h-10 rounded"><i class="fa-solid fa-cart-shopping pr-2"></i>Buy Now</button>
+            </div>
+            <div class="w-full lg:w-2/5 h-2/4">
+               <img src="./images/model.png" alt="">
+            </div>
+        </div>
+        <div class="banner_container mx-auto">
+
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
